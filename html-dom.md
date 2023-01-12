@@ -1,48 +1,63 @@
 # Referência HTML DOM
 
-### Encontrando elementos HTML
+## Encontrando elementos HTML
+- ### Pelo ID
 ```
 document.getElementById("ID");
-> Retorna o elemento encontrado pelo id.
 ```
 
+<br> 
+
+- ### Pela tag
 ```
 document.getElementsByTagName("TAG");
-> Retorna um vetor de objetos com todos os elementos encontrado pela tag.
 ```
+> Retorna um vetor de objetos com todos os elementos encontrados.
 
+<br>
+
+- ### Pela classe
 ```
 document.getElementsByClassName("CLASSE");
-> Retorna um vetor de objetos com todos os elementos encontrado pela classe.
 ```
+> Retorna um vetor de objetos com todos os elementos encontrados.
 
+<br>
+<br>
 
-### Alterando elementos HTML
+## Alterando elementos HTML
+- ### Alterar o conteúdo
 ```
 ELEMENTO.innerHTML = "CONTEÚDO";
-> Altera o conteúdo do elemento.
 ```
 
+<br>
+
+- ### Alterar o estilo
 ```
 ELEMENTO.style.PROPRIEDADE = "VALOR";
-> Altera o estilo do elemento.
 ```
 
+<br>
+
+- ### Alterar o atributo
 ```
 ELEMENTO.ATRIBUTO = "VALOR";
-> Altera o atributo do elemento. (Propriedade)
+> Propriedade 
 ```
 
 ```
 ELEMENTO.setAttribute(ATRIBUTO, "VALOR");
-> Altera o atributo do elemento. (Método)
+> Método
 ```
->> ### .attribute VS setAttribute()
->> Nos dois casos executam a mesma função, mas irão existir casos em que o atributo não faz parte do DOM.
 
+> ### .attribute VS setAttribute()
+> Os dois casos executam a mesma função, mas irão existir situações em que o atributo não faz parte do DOM, fazendo necessário o setAttribute().
 
+<br>
+<br>
 
-### Adicionando ou deletando elementos
+## Adicionando ou deletando elementos
 ```
 
 ```
