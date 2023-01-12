@@ -1,6 +1,0 @@
-# Referência HTML DOM
-
-###
-```
-
-```
