@@ -6,15 +6,11 @@
 document.getElementById("ID");
 ```
 
-<br> 
-
 - ### Pela tag
 ```
 document.getElementsByTagName("TAG");
 ```
 > Retorna um vetor de objetos com todos os elementos encontrados.
-
-<br>
 
 - ### Pela classe
 ```
@@ -23,7 +19,6 @@ document.getElementsByClassName("CLASSE");
 > Retorna um vetor de objetos com todos os elementos encontrados.
 
 <br>
-<br>
 
 ## Alterando elementos HTML
 - ### Alterar o conteúdo
@@ -31,14 +26,10 @@ document.getElementsByClassName("CLASSE");
 ELEMENTO.innerHTML = "CONTEÚDO";
 ```
 
-<br>
-
 - ### Alterar o estilo
 ```
 ELEMENTO.style.PROPRIEDADE = "VALOR";
 ```
-
-<br>
 
 - ### Alterar o atributo
 ```
@@ -55,9 +46,9 @@ ELEMENTO.setAttribute(ATRIBUTO, "VALOR");
 > Os dois casos executam a mesma função, mas irão existir situações em que o atributo não faz parte do DOM, fazendo necessário o setAttribute().
 
 <br>
-<br>
 
 ## Adicionando ou deletando elementos
+- ###
 ```
 
 ```
