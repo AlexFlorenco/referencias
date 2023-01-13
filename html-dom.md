@@ -12,15 +12,13 @@
     ```
     > Retorna um vetor de objetos com todos os elementos encontrados.
 
-    <br>
-
     - ### Pela classe
     ```
     document.getElementsByClassName("CLASSE");
     ```
     > Retorna um vetor de objetos com todos os elementos encontrados.
 
-<br>
+    <br>
 
 - ## Alterando elementos HTML
     - ### Alterar o conteúdo
@@ -34,8 +32,6 @@
     ```
     > [Todas as propriedades para objetos de estilo](https://www.w3schools.com/jsref/dom_obj_style.asp)
 
-    <br>
-
     - ### Alterar o atributo
     ```
     ELEMENTO.ATRIBUTO = "VALOR";
@@ -48,7 +44,7 @@
     > ### .attribute VS setAttribute()
     > Os dois casos executam a mesma função, mas irão existir situações em que o atributo não faz parte do DOM, fazendo necessário o setAttribute().
 
-<br>
+    <br>
 
 - ## Adicionando ou deletando elementos
     - ### Criar um elemento HTML
@@ -57,16 +53,12 @@
     ```
     > Cria um nó de elemento. Necessário adicionar conteúdo (inner) e setar o destino (append).
 
-    <br>
-
     - ### Adicionar um elemento HTML 
     ```
     ELEMENTO_PAI.appendChild(ELEMENTO_NOVO);
     ```
     > ### Por que é necessário aspas no parâmetro createElement() e no appendChild() não?
     > O parâmetro de entrada deve ser um objeto já existente, portanto se trata de uma referenciação, e não uma declaração.
-
-    <br>
 
     - ### Remover um elemento HTML
     ```
