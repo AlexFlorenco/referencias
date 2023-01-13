@@ -18,6 +18,20 @@
     ```
     > Retorna um vetor de objetos com todos os elementos encontrados.
 
+    - ### Pelo seletor CSS
+    ```
+    document.querySelectorAll("SELETOR");
+    ```
+    > Deve-se passar o seletor no parâmetro (".classe", "#id", "tag").<br>
+    > Retorna um vetor de objetos com todos os elementos encontrados.
+
+    - ### Encontrando coleções de objetos
+    ```
+    document.OBJETO;
+    ```
+    > Retorna um vetor de objetos com todos os elementos encontrados. <br>
+    > [Objetos HTML que são acessíveis](https://www.w3schools.com/js/js_htmldom_elements.asp#:~:text=The%20following%20HTML%20objects%20(and%20object%20collections)%20are%20also%20accessible%3A)
+
     <br>
 
 - ## Alterando elementos HTML
@@ -79,18 +93,29 @@
     <br>
 
 - ## Manipuladores de eventos
+    - ### Adicionando manipuladores
     ```
-    document.getElementById("ID").EVENTO = function(){ }	
+    document.getElementById("ID").EVENTO = FUNÇÃO;	
     ```
-    > [Todos os eventos do HTML DOM](https://www.w3schools.com/jsref/dom_obj_event.asp)
+    ```
+    ELEMENTO.addEventListener("EVENTO", FUNÇÃO);
+    ```
+    > [Todos os eventos do HTML DOM](https://www.w3schools.com/jsref/dom_obj_event.asp)<br>
+    > Se necessário passar parâmetros, use uma função anônima para chamar sua função com parâmetros.
+    >> ```ELEMENTO.addEventListener("EVENTO", function() { FUNÇÃO(PARÂMETROS) });```
+
+    - ### Removendo manipuladores
+    ```
+    ELEMENTO.removeEventListener("EVENTO", FUNÇÃO);
+    ```
 
     <br>
 
-- ## Objetos do documento DOM
+- ## Objeto document DOM
     ```
     let url = document.OBJETO;
     ```
-    > [Todas as propriedades e métodos dos objetos de documento](https://www.w3schools.com/jsref/dom_obj_document.asp)
+    > [Todas as propriedades e métodos do objeto documento](https://www.w3schools.com/jsref/dom_obj_document.asp)
 
     <br>
 
