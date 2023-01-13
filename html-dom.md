@@ -30,15 +30,15 @@
     ```
     ELEMENTO.style.PROPRIEDADE = "VALOR";
     ```
+    > [Todas as propriedades para objetos de estilo](https://www.w3schools.com/jsref/dom_obj_style.asp)
 
     - ### Alterar o atributo
     ```
     ELEMENTO.ATRIBUTO = "VALOR";
     > Propriedade 
     ```
-
     ```
-    ELEMENTO.setAttribute(ATRIBUTO, "VALOR");
+    ELEMENTO.setAttribute("ATRIBUTO", "VALOR");
     > Método
     ```
 
