@@ -119,8 +119,27 @@
 
     <br>
 
-- ##
-    ```
+- ## Nós
+    - ### Propriedades de nós
+        - NÓ.nodeName: Nome do nó;<br><br>
+        - NÓ.nodeValue: Valor nó;<br><br>
+        - ELEMENTO.nodeType: Tipo do nó.
+            > 1 = Nó de elemento<br>
+            2 = Nó de atributo (Descontinuado)<br>
+            3 = Nó de texto<br>
+            8 = Nó de comentário
 
-    ```
-    >
+    <br>
+
+    - ### Navegação entre nós
+        - ELEMENTO.parentNode: Retorna o nó pai;<br><br>
+        - ELEMENTO.childNodes: Todos os nós filhos;
+            > Retorna espaços em branco e comentários.<br> Solução: *children*
+        - ELEMENTO.firstChild: Primeiro nó filho;
+            > Retorna espaços em branco e comentários.<br> Solução: *firstElementChild*
+        - ELEMENTO.lastChild: Último nó filho;
+            > Retorna espaços em branco e comentários.<br> Solução: *lastElementChild*
+        - ELEMENTO.nextSibling: Próximo nó irmão;
+            > Retorna espaços em branco e comentários.<br> Solução: *nextElementSibling*
+        - ELEMENTO.previousSibling: Nó irmão anterior.
+            > Retorna espaços em branco e comentários.<br> Solução: *previousElementSibling*
