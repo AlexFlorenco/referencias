@@ -84,17 +84,23 @@
     ```
     > O uso deste método é fortemente desencorajado.
 
+    <br>
+
 - ## Manipuladores de eventos
     ```
     document.getElementById("ID").EVENTO = function(){ }	
     ```
     > [Todos os eventos do HTML DOM](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
+    <br>
+
 - ## Objetos do documento DOM
     ```
     let url = document.OBJETO;
     ```
     > [Todas as propriedades e métodos dos objetos de documento](https://www.w3schools.com/jsref/dom_obj_document.asp)
+
+    <br>
 
 - ##
     ```
