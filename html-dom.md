@@ -38,6 +38,8 @@
     - ### Alterar o conteúdo
     ```
     ELEMENTO.innerHTML = "CONTEÚDO";
+    ou
+    ELEMENTO.replaceChild(NOVO_ELEMENTO, ELEMENTO_SUBSTITUÍDO);
     ```
 
     - ### Alterar o estilo
@@ -67,17 +69,36 @@
     ```
     > Cria um nó de elemento. Necessário adicionar conteúdo (inner) e setar o destino (append).
 
-    - ### Adicionar um elemento HTML 
+    - ### Adicionar um elemento HTML (no final)
     ```
     ELEMENTO_PAI.appendChild(ELEMENTO_NOVO);
     ```
     > ### Por que é necessário aspas no parâmetro createElement() e no appendChild() não?
     > O parâmetro de entrada deve ser um objeto já existente, portanto se trata de uma referenciação, e não uma declaração.
 
+    - ### Adicionar um elemento HTML (antes de outro)
+    ```
+    ELEMENTO_PAI.insertBefore(NOVO_ELEMENTO, ELEMENTO_FILHO_REFERÊNCIA);
+    ```
+
+    - ### Criar e adicionar um elemento HTML (nó)
+    ```
+    const ELEMENTO1 = document.createElement("TAG");
+    const NÓ = document.createTextNode("TEXTO");
+    ELEMENTO1.appendChild(NÓ);
+    document.getElementById("ID").appendChild(ELEMENTO);
+    ```
+    > ### Qual a diferença entre createElement e innerHTML?
+    > CreateElement escapa HTML, inserindo texto exatamente como ele é, evitando injeções HTML.<br>
+    InnerHTML executa o trecho de código HTML.
+
     - ### Remover um elemento HTML
     ```
+    ELEMENTO.remove();
+    ou
     ELEMENTO_PAI.removeChild(ELEMENTO_FILHO);	
     ```
+    > remove() pode não funcionar em browsers antigos
 
     - ### Substituir um elemento HTML
     ```
@@ -132,14 +153,14 @@
     <br>
 
     - ### Navegação entre nós
-        - ELEMENTO.parentNode: Retorna o nó pai;<br><br>
-        - ELEMENTO.childNodes: Todos os nós filhos;
+        - *ELEMENTO.parentNode*: Retorna o nó pai;<br><br>
+        - *ELEMENTO.childNodes*: Todos os nós filhos;
             > Retorna espaços em branco e comentários.<br> Solução: *children*
-        - ELEMENTO.firstChild: Primeiro nó filho;
+        - *ELEMENTO.firstChild*: Primeiro nó filho;
             > Retorna espaços em branco e comentários.<br> Solução: *firstElementChild*
-        - ELEMENTO.lastChild: Último nó filho;
+        - *ELEMENTO.lastChild*: Último nó filho;
             > Retorna espaços em branco e comentários.<br> Solução: *lastElementChild*
-        - ELEMENTO.nextSibling: Próximo nó irmão;
+        - *ELEMENTO.nextSibling*: Próximo nó irmão;
             > Retorna espaços em branco e comentários.<br> Solução: *nextElementSibling*
-        - ELEMENTO.previousSibling: Nó irmão anterior.
+        - *ELEMENTO.previousSibling*: Nó irmão anterior.
             > Retorna espaços em branco e comentários.<br> Solução: *previousElementSibling*
